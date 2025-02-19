@@ -14,7 +14,7 @@ Data de Criação: 19/10/2024
 import requests
 from tqdm import tqdm
 import time
-from spinner import show_spinner
+from scripts.spinner import show_spinner
 import pandas as pd
 
 def get_company_data(cnpj: str) -> dict:
@@ -125,7 +125,7 @@ def get_all_data(lista_cnpj: list) -> pd.DataFrame:
                 break  # Sai do loop se a consulta foi bem-sucedida
             else:
                 # Verifica se o erro foi 429
-                remaining_cnpjs = total_cnpjs - (index + 2)  # CNPJs restantes
+                remaining_cnpjs = total_cnpjs - (index)  # CNPJs restantes
                 print(f"Erro ao buscar CNPJ {cnpj}. Tentando novamente após 1 minuto... {remaining_cnpjs} CNPJ(s) restante(s).")
 
                 # Inicia o spinner por 60 segundos
