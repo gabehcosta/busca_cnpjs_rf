@@ -17,8 +17,6 @@ Este projeto permite a consulta e análise de dados cadastrais de empresas brasi
 - Bibliotecas Python:
   - `requests`
   - `pandas`
-  - `numpy`
-  - `sqlalchemy`
 
 ## Instalação
 
@@ -64,10 +62,10 @@ Este projeto permite a consulta e análise de dados cadastrais de empresas brasi
 
 1. **Preparação dos Dados**: Certifique-se de ter um arquivo excel como o do reposítorio, contendo apenas os CNPJs das empresas que deseja realizar a busca.
 
-2. **Execução do Script Principal**: Utilize o script `main.py` localizado no diretório `scripts/` para iniciar as consultas. Por exemplo:
+2. **Execução do Script Principal**: Utilize o script `main.py` localizado no diretório raiz para iniciar as consultas. Por exemplo:
 
    ```bash
-   python scripts/main.py
+   python .\main.py
    ```
 
 ## Licença
